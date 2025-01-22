@@ -11,6 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        navbarcolor : "#151B54"
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],// Use Google Font 'Roboto' for sans-serif
       },
     },
   },
