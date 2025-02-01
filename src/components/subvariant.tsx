@@ -1,7 +1,7 @@
 // components/PackageGrid.tsx
 
 import React from "react";
-
+import Image from 'next/image';
 type Package = {
   imageUrl: string;
   tripDuration: string;
@@ -21,7 +21,7 @@ const SubVariant: React.FC<SubVariantProps> = ({ packages }) => {
       {packages.map((pkg, index) => (
         <div key={index} className="relative overflow-hidden rounded-lg bg-white shadow-lg">
           <div className="relative">
-            <img
+            <Image
               src={pkg.imageUrl}
               alt={pkg.altText}
               className="w-full h-auto object-cover rounded-t-lg"

@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLogin, setIsLogin] = useState(true); // To toggle between login and register form
@@ -53,7 +52,7 @@ const Navbar = () => {
                   <a href="#" className="text-sm text-blue-600">Forgot Password?</a>
                 </div>
                 <div className="text-center mt-4">
-                  <p>Don't have an account? <span onClick={toggleForm} className="text-blue-600 cursor-pointer">Register</span></p>
+                  <p>Don&apos;t have an account? <span onClick={toggleForm} className="text-blue-600 cursor-pointer">Register</span></p>
                 </div>
               </div>
             ) : (

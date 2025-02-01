@@ -1,3 +1,4 @@
+import Image from 'next/image';
 type CardProps = {
     image: string;
     duration: string;
@@ -8,7 +9,7 @@ type CardProps = {
   const ActivityCard = ({ image, duration, location, price }: CardProps) => {
     return (
       <div className="bg-white rounded-lg shadow-md overflow-hidden">
-        <img src={image} alt={location} className="w-full h-56 object-cover" />
+        <Image src={image} alt={location} className="w-full h-56 object-cover" />
         <div className="p-4">
           <div className="text-xl font-bold">{location}</div>
           <div className="text-sm text-gray-500">{duration}</div>

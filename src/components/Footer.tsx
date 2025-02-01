@@ -1,5 +1,5 @@
 import React from 'react';
- 
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
@@ -51,16 +51,16 @@ const Footer: React.FC = () => {
            <div className="mt-8 flex justify-center space-x-6">
             {/* Instagram Icon (SVG) */}
       <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-        <img src="/svg/facebook.svg" alt="Facebook" className="w-6 h-6" />
+        <Image src="/svg/facebook.svg" alt="Facebook" className="w-6 h-6" />
       </a>
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-        <img src="/svg/youtube.svg" alt="Twitter" className="w-6 h-6" />
+        <Image src="/svg/youtube.svg" alt="Twitter" className="w-6 h-6" />
       </a>
       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-        <img src="/svg/insta.svg" alt="Instagram" className="w-6 h-6" />
+        <Image src="/svg/insta.svg" alt="Instagram" className="w-6 h-6" />
       </a>
        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-        <img src="/svg/linkedin.svg" alt="Instagram" className="w-6 h-6" />
+        <Image src="/svg/linkedin.svg" alt="Instagram" className="w-6 h-6" />
       </a>
           </div>
         </div>

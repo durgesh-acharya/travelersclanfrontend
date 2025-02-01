@@ -2,6 +2,7 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { FC } from 'react';
+import Image from 'next/image';
 
 const AboutUs: FC = () => {
   return (
@@ -58,21 +59,21 @@ const AboutUs: FC = () => {
           <div className="flex flex-wrap justify-center mt-8 gap-12">
             <div className="w-full md:w-1/4 p-4">
               <div className="p-6 bg-white shadow-lg rounded-lg">
-                <img className="w-24 h-24 rounded-full mx-auto" src="/team1.jpg" alt="Team Member" />
+                <Image className="w-24 h-24 rounded-full mx-auto" src="/team1.jpg" alt="Team Member" />
                 <h3 className="text-xl font-semibold mt-4">John Doe</h3>
                 <p className="text-base text-gray-600">CEO & Founder</p>
               </div>
             </div>
             <div className="w-full md:w-1/4 p-4">
               <div className="p-6 bg-white shadow-lg rounded-lg">
-                <img className="w-24 h-24 rounded-full mx-auto" src="/team2.jpg" alt="Team Member" />
+                <Image className="w-24 h-24 rounded-full mx-auto" src="/team2.jpg" alt="Team Member" />
                 <h3 className="text-xl font-semibold mt-4">Jane Smith</h3>
                 <p className="text-base text-gray-600">Marketing Director</p>
               </div>
             </div>
             <div className="w-full md:w-1/4 p-4">
               <div className="p-6 bg-white shadow-lg rounded-lg">
-                <img className="w-24 h-24 rounded-full mx-auto" src="/team3.jpg" alt="Team Member" />
+                <Image className="w-24 h-24 rounded-full mx-auto" src="/team3.jpg" alt="Team Member" />
                 <h3 className="text-xl font-semibold mt-4">Alice Brown</h3>
                 <p className="text-base text-gray-600">Lead Travel Planner</p>
               </div>

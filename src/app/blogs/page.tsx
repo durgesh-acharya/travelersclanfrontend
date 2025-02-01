@@ -4,7 +4,7 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Link from 'next/link'
-
+import Image from 'next/image';
 const blogs = [
   { id: 1, imageUrl : "/images/1.jpg", date : "18 November,2024", title: "Kashmir: Heaven on Earth", content: "Kashmir, often referred to as Heaven on Earth, is a picturesque paradise offering mesmerizing landscapes, rich culture, and serene beauty." },
   { id: 2, imageUrl : "/images/2.jpg", date : "18 November,2024", title: "Lonavala: Escape to Nature", content: "Lonavala, nestled in the Western Ghats, is the perfect getaway for nature lovers and adventure seekers alike. Known for its cool climate, lush green landscapes, and scenic views, Lonavala is a favorite among those looking to unwind. " },
@@ -23,7 +23,7 @@ const BlogList = () => {
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogs.map((blog) => (
           <div key={blog.id} className="bg-white border border-gray-300 shadow-lg rounded-lg overflow-hidden">
-            <img 
+            <Image 
               src={blog.imageUrl} 
               alt={blog.title} 
               className="w-full h-48 object-cover"

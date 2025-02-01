@@ -3,7 +3,7 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { FC, useState} from 'react';
-
+import Image from 'next/image';
 interface Activity {
   id: number;
   name: string;
@@ -71,7 +71,7 @@ const ActivityList: FC = () => {
             className="bg-white shadow-lg rounded-lg overflow-hidden"
           >
             <div className="relative">
-              <img
+              <Image
                 src={activity.imageUrl}
                 alt={activity.name}
                 className="w-full h-48 object-cover"

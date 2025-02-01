@@ -1,7 +1,7 @@
 // components/HorizontalScroll.tsx
 'use client';
-import { useState, useRef } from 'react';
-
+import { useRef } from 'react';
+import Image from 'next/image';
 type Location = {
   imageUrl: string;
   location: string;
@@ -63,7 +63,7 @@ const HorizontalScroll = () => {
         {locations.map((location, index) => (
           <div key={index} className="flex-shrink-0 w-48">
             <div className="relative">
-              <img
+              <Image
                 src={location.imageUrl}
                 alt={location.location}
                 className="w-full h-40 object-cover rounded-lg shadow-md"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 type ImageGridProps = {
   images: string[]; // You can extend this prop to take dynamic images if needed.
@@ -11,7 +12,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
       {/* First row: One large image */}
       <div className="row-span-1">
         <div className="relative">
-          <img
+          <Image
             src={images[0]}
             alt="Main Image"
             className="w-full h-full object-cover rounded-lg"
@@ -26,7 +27,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
       <div className="grid grid-cols-2 gap-2 col-span-1">
         {[...Array(4)].map((_, index) => (
           <div key={index} className="relative">
-            <img
+            <Image
               src={images[index + 1]}
               alt={`Image ${index + 1}`}
               className="w-full h-full object-cover rounded-lg"
