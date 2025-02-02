@@ -9,7 +9,13 @@ type CardProps = {
 const TourCard = ({ image, duration, location, price }: CardProps) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
-      <Image src={image} alt={location} className="w-full h-56 object-cover" />
+      <div className="relative w-full h-64">
+      <Image
+       src={image} 
+       alt={location} 
+      fill 
+       className="w-full h-56 object-cover" />
+    </div>
       <div className="p-4">
         <div className="text-xl font-bold">{location}</div>
         <div className="text-sm text-gray-500">{duration}</div>
@@ -23,5 +29,7 @@ const TourCard = ({ image, duration, location, price }: CardProps) => {
     </div>
   );
 };
+
+
 
 export default TourCard;

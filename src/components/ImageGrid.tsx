@@ -11,10 +11,11 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 ml-6 mr-6">
       {/* First row: One large image */}
       <div className="row-span-1">
-        <div className="relative">
+        <div className="relative w-full h-64">
           <Image
             src={images[0]}
             alt="Main Image"
+            fill
             className="w-full h-full object-cover rounded-lg"
           />
           <div className="absolute bottom-4 left-4 text-white font-bold bg-black bg-opacity-50 px-4 py-2 rounded">

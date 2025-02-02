@@ -27,6 +27,8 @@ const BlogList = () => {
               src={blog.imageUrl} 
               alt={blog.title} 
               className="w-full h-48 object-cover"
+              width={500}  // Specify width
+              height={300} // Specify height
             />
             <div className="p-6">
             <h6 className='text-md text-gray-600 mb-4'>{blog.date}</h6>

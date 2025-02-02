@@ -62,10 +62,11 @@ const HorizontalScroll = () => {
       >
         {locations.map((location, index) => (
           <div key={index} className="flex-shrink-0 w-48">
-            <div className="relative">
+            <div className="relative w-full h-32">
               <Image
                 src={location.imageUrl}
                 alt={location.location}
+                fill
                 className="w-full h-40 object-cover rounded-lg shadow-md"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black text-white py-2 px-4 text-center">

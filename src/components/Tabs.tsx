@@ -11,19 +11,25 @@ const Tabs = () => {
   // Sample data for tours and activities
   const tours = [
     {
-      image: "images/2.jpg",
+      image: "/images/1.jpg",
       duration: "3N4D",
       location: "Paris, France",
       price: "₹45,000"
     },
     {
-      image: "images/3.jpg",
+      image: "/images/2.jpg",
+      duration: "3N4D",
+      location: "Paris, France",
+      price: "₹45,000"
+    },
+    {
+      image: "/images/3.jpg",
       duration: "5N6D",
       location: "Bali, Indonesia",
       price: "₹60,000"
     },
     {
-      image: "images/4.jpg",
+      image: "/images/4.jpg",
       duration: "7N8D",
       location: "Tokyo, Japan",
       price: "₹80,000"
@@ -32,19 +38,19 @@ const Tabs = () => {
 
   const activities = [
     {
-      image: "images/13.jpg",
+      image: "/images/13.jpg",
       duration: "3H",
       location: "Mountain Hiking",
       price: "₹1,500"
     },
     {
-      image: "images/14.jpg",
+      image: "/images/14.jpg",
       duration: "2H",
       location: "City Tour",
       price: "₹1,200"
     },
     {
-      image: "images/15.jpg",
+      image: "/images/15.jpg",
       duration: "4H",
       location: "Scuba Diving",
       price: "₹3,000"
